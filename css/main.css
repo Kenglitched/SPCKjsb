@@ -1,22 +1,22 @@
 :root {
-    --colored-bg: #2986c4;
-    --colored-text: white;
-    --padding-section: 30px 100px;
-    --margin-section: 100px 0;
+  --colored-bg: #2986c4;
+  --colored-text: white;
+  --padding-section: 30px 100px;
+  --margin-section: 100px 0;
 }
 
 .colored {
+  background-color: var(--colored-bg);
+  color: var(--colored-text);
+
+  nav {
     background-color: var(--colored-bg);
-    color: var(--colored-text);
 
-    nav {
-        background-color: var(--colored-bg);
-
-        a,
-        button {
-            color: var(--colored-text);
-        }
+    a,
+    button {
+      color: var(--colored-text);
     }
+  }
 }
 
 #banner,
@@ -24,115 +24,121 @@
 #LifeMistakes,
 #Fixing,
 #Me footer {
-    padding: var(--padding-section);
-    width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  padding: var(--padding-section);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #Fixing h1,
 #Fixing h1 {
-    text-align: center;
-    line-height: 80px;
-    padding: 30px;
+  text-align: center;
+  line-height: 80px;
+  padding: 30px;
 }
 
 /* banner */
 header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Arial Narrow Bold', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Arial Narrow Bold", sans-serif;
 
-    nav {
-        width: 100%;
-    }
+  nav {
+    width: 100%;
+  }
 }
 
 #banner {
-    min-height: 400px;
-    width: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-height: 400px;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 #banner img {
-    width: 550px;
-    position: absolute;
-    left: 50%;
-    border-radius: 0;
+  width: 550px;
+  position: absolute;
+  left: 50%;
+  border-radius: 0;
 }
 
 /* main */
 main {
-    --colored-bg: #569fe4;
-    width: 100%;
+  --colored-bg: #569fe4;
+  width: 100%;
 }
 
 section {
-    width: 100%;
+  width: 100%;
 }
 
 /* services */
 #Funglitches {
+  margin-top: 0;
+  padding-top: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
 
-    margin-top: 0;
-    padding-top: 100px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  i {
+    font-size: 60px;
+    color: var(--colored-bg);
+    margin-top: 30px;
+  }
 
-    i {
-        font-size: 60px;
-        color: var(--colored-bg);
-        margin-top: 30px;
-    }
-
-    img {
-        width: 325px;
-        border-radius: 30px;
-        object-fit: cover;
-        height: 200px;
-    }
+  img {
+    width: 325px;
+    border-radius: 30px;
+    object-fit: cover;
+    height: 200px;
+  }
 }
 
 #LifeMistakes {
-    background-color: #14669ca6;
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #14669ca6;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  #carouselExampleIndicators {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.842);
+  }
+}
 
-    #carouselExampleIndicators {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgba(255, 255, 255, 0.842);
-    }
+.carousel-item {
+  min-height: 500px;
 }
 
 #Fixing {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #376b91a6
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #376b91a6;
 }
 
 #Me {
-    background-color: #6e0000;
-    color: #b3a5a5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  background-color: #6e0000;
+  color: #b3a5a5;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-
-
 @media only screen and (max-width: 1024px) {
+  #banner,
+  #Funglitches,
+  #World,
+  #Fixing,
+  footer {
+    padding: 20px;
+  }
 
-    #banner,
-    #Funglitches,
-    #World,
-    #Fixing,
-    footer {
-        padding: 20px;
-    }
+  #banner img {
+    position: static;
+    margin-top: 30px;
+  }
 
-    #banner img {
-        position: static;
-        margin-top: 30px;
-    }
+  .carousel-item {
+    min-height: 800px;
+  }
 }
