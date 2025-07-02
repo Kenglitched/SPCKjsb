@@ -25,7 +25,6 @@
 #Fixing,
 #Me footer {
     padding: var(--padding-section);
-    margin: var(--margin-section);
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -97,34 +96,31 @@ section {
 }
 
 #LifeMistakes {
-    background-color: #14669ca6 ;
+    background-color: #14669ca6;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     #carouselExampleIndicators {
-        img {
-            object-fit: cover;
-            height: 500px;
-            width: fit-content;
-        }
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgba(255, 255, 255, 0.842);
     }
+}
+
+#Fixing {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #376b91a6
+}
+
+#Me {
+    background-color: #6e0000;
+    color: #b3a5a5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 
 
 
-/* comments */
-
-
-/* keyframe */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* responsive */
 @media only screen and (max-width: 1024px) {
 
     #banner,
