@@ -1,13 +1,14 @@
-#Feedback,#commentinfo{
+#Feedback {
     background-color: rgb(90, 181, 209);
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 30px;
     text-align: center;
-    #comment{
+
+    #comment {
         width: 650px;
         height: 350px;
         border-radius: 15px;
-        border-style:dashed;
+        border-style: dashed;
         font-size: 25px;
     }
 }
