@@ -83,7 +83,6 @@ section {
 
   i {
     font-size: 60px;
-    color: var(--colored-bg);
     margin-top: 30px;
   }
 
@@ -123,7 +122,12 @@ section {
   color: #b3a5a5;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    i{
+    font-size: 60px;
+    margin-top: 30px;
+    }
 }
+
 
 @media only screen and (max-width: 1024px) {
 
